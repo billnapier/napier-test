@@ -23,4 +23,5 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh issue comment ${{ github.event.inputs.issue_number }} --body "Hello world! This is an automated comment from a GitHub Action."
+          gh api repos/billnapier/napier-test/issues/1/comments -f body='Hi from CLI'
+          # gh issue comment ${{ github.event.inputs.issue_number }} --body "Hello world! This is an automated comment from a GitHub Action."
