@@ -179,6 +179,7 @@ jobs:
       issues: 'write'
       pull-requests: 'write'
     steps:
+        
       - name: 'Mint identity token'
         id: 'mint_identity_token'
         if: |-
